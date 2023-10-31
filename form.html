@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <style>
+            body{
+                background-color: rgb(2, 235, 235);
+            }
+        </style>
+        <script>
+            function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+
+<h1><center>Form Validation using Javascript</center></h1>
+<center>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname"><br><br>
+  Email:<input type="text" value=""><br><br>
+  Roll no:<input type="number" value=""><br><br>
+  Gender:
+  <input type="radio" name="name">Male 
+  <input type="radio" name="name">Female<br><br></center>
+  <h3>1.What is the answer for 2+3?</h3><br>
+  <input type="radio"  name="name">5<br>
+  <input type="radio"  name="name">8<br>
+  <input type="radio"  name="name">9<br>
+  <input type="radio"  name="name">10<br>
+  <h3>2.What is the India's newly changed named?</h3><br>
+  <input type="radio"  name="name">Barath<br>
+  <input type="radio"  name="name">Bharaath<br>
+  <input type="radio"  name="name">Bharath<br>
+  <input type="radio"  name="name">None<br>
+  <h3>3.Who is Nobita's close friend?</h3>
+  <input type="radio"  name="name">Pikachoo<br>
+  <input type="radio"  name="name">Doremon<br>
+  <input type="radio"  name="name">Minion<br>
+  <input type="radio"  name="name">Mr.Bean<br><br>
+
+
+  <input type="submit" value="Submit">
+  
+</form>
+
+</body>
+</html>
